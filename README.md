@@ -49,8 +49,8 @@ The AI uses the **Minimax Algorithm**, which:
 
 ## 📸 Screenshots
 
-<img width="200" height="100" alt="s1" src="https://github.com/user-attachments/assets/94f02f1b-35f6-444e-aabc-d7556c37a3f2" />
-<img width="100" height="500" alt="s2" src="https://github.com/user-attachments/assets/e4be44f2-edd6-451c-9643-36e77977caba" />
+<img width="auto" height="auto" alt="s1" src="https://github.com/user-attachments/assets/94f02f1b-35f6-444e-aabc-d7556c37a3f2" />
+<img width="auto" height="auto" alt="s2" src="https://github.com/user-attachments/assets/e4be44f2-edd6-451c-9643-36e77977caba" />
 
 
 ---
