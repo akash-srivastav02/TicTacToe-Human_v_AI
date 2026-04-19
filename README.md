@@ -1,16 +1,109 @@
-# React + Vite
+# 🎮 Tic Tac Toe – Human vs AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Tic Tac Toe game** built using React where you play against an intelligent AI powered by the **Minimax Algorithm**.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://tictactoe-human-vs-ai.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🤖 **AI Opponent (Minimax Algorithm)** – Unbeatable in hard mode
+* 🎚️ **Difficulty Levels**
 
-## Expanding the ESLint configuration
+  * Easy → Random moves
+  * Medium → Mixed strategy
+  * Hard → Optimal AI (Minimax)
+* 🎮 **Game Modes**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Play Once
+  * Best of 3
+  * Best of 5
+* 📊 **Dynamic Points Table** – Track round-wise performance
+* 🧠 **Turn Indicator** – Real-time game status
+* 📱 **Responsive Design** – Works on mobile & desktop
+* 🎉 **Popup System** – Shows result (Win / Draw) with replay option
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React (Vite)
+* **Styling:** CSS
+* **Logic:** JavaScript (Minimax Algorithm)
+* **Deployment:** Netlify
+
+---
+
+## 🧠 How AI Works
+
+The AI uses the **Minimax Algorithm**, which:
+
+* Simulates all possible game states
+* Chooses the move that maximizes its chances of winning
+* Minimizes the opponent’s chances
+
+👉 Result: The AI is **unbeatable in hard mode**
+
+---
+
+## 📸 Screenshots
+
+<img width="1366" height="635" alt="s1" src="https://github.com/user-attachments/assets/94f02f1b-35f6-444e-aabc-d7556c37a3f2" />
+<img width="1080" height="2408" alt="s2" src="https://github.com/user-attachments/assets/e4be44f2-edd6-451c-9643-36e77977caba" />
+
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/akash-srivastav02/TicTacToe-Human_v_AI.git
+cd TicTacToe-Human_v_AI
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the app:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## 📌 Future Improvements
+
+* 🎨 UI enhancement with Tailwind CSS
+* ✨ Animations (winning line, transitions)
+* 🔊 Sound effects
+* 🌐 Multiplayer mode (online)
+
+---
+
+## 👨‍💻 Author
+
+**Akash Srivastav**
+
+* GitHub: https://github.com/akash-srivastav02
+* Portfolio: https://akash-srivastav.netlify.app/
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+---
