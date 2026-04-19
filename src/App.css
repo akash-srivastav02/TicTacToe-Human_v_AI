@@ -1,0 +1,169 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+/* CENTER BOTH SIDES */
+.left, .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FIX WIDTH FOR TRUE CENTERING */
+.game-box, .table-box {
+  width: 320px;
+  text-align: center;
+}
+
+/* HEADINGS */
+h1 { margin-bottom: 10px; }
+h3 { margin-bottom: 10px; }
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 6px;
+  background: #1e293b;
+  color: white;
+  border: 1px solid #475569;
+}
+
+/* BOARD */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 90px;
+  height: 90px;
+  background: #1e293b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background: #334155;
+}
+
+/* BUTTON */
+button {
+  padding: 8px 16px;
+  background: #22c55e;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+/* TABLE */
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #475569;
+  padding: 10px;
+}
+
+/* POPUP */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;   /* stack layout */
+    height: auto;
+  }
+
+  .left, .right {
+    padding: 20px 0;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+
+  .game-box, .table-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* BOARD SMALLER */
+  .board {
+    grid-template-columns: repeat(3, 70px);
+    gap: 8px;
+  }
+
+  .cell {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+
+  /* TEXT SMALLER */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2, h3 {
+    font-size: 1rem;
+  }
+
+  /* DROPDOWNS STACK */
+  .controls {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  /* TABLE SCROLL (important) */
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
